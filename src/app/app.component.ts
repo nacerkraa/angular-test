@@ -31,4 +31,7 @@ export class AppComponent {
   incrimentCounter(){
     this.counter ++;
   }
+
+  // ng Style
+  selectorColor: string = "blue";
 }
