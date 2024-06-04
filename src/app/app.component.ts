@@ -5,6 +5,30 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   title = '1.Introducation';
+  counter: number = 1;
+  inputText: string = 'My text';
+
+  // attr binding
+  isDisabled: boolean = false;
+  imgSrc: string = '../assets/ngImg.jpg';
+
+  // style binding
+  titleHeader: string = 'Angular Introduction';
+  bg_color: string = "green";
+  fnt_color: string = "red";
+  description: string = "This is my new description";
+
+  // class binding
+  redText: string = 'yes';
+
+  // ngClass
+  message: string = "This is warning message";
+  classes: string = "danger text-size"
+
+  incrimentCounter(){
+    this.counter ++;
+  }
 }
