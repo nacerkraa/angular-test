@@ -1,22 +1,17 @@
 <div>Hello {{title}}</div>
 
-<button type="button" [disabled]="isDisabled">My Button</button>
+<div *ngIf="isLogedIn else logout"> Welcome: {{username}}</div>
+<div> Please login first to see the content</div>
 
-<img [src]="imgSrc" alt="" srcset="" height="250px" width="250px">
+<ng-template #logout >This is when you are logout</ng-template>
 
-<div class="main" [style.background]="bg_color">
-  <h1 class="header">{{titleHeader}}</h1>
-  <p [class.textColor] = "redText == 'yes'">{{description}}</p>
-  <button (click)="incrimentCounter()">Incriment</button>
-  <div class="counter">{{counter}}</div>
-  <input [(ngModel)]="inputText" placeholder="Enter Text">
-  <div class="chan">You Entered: {{inputText}}</div>
+<ul>
+    <li *ngFor="let name of names; let i = index">{{i}} {{name}}</li>
+</ul>
 
-  <div [ngClass]="classes">
-    {{message}}
-  </div>
-
-  <div class="color-box" [ngStyle]="{color: selectorColor}">
-    This is my text over here!
-  </div>
+<div [ngSwitch]="grade">
+    <p *ngSwitchCase="'A'">Excellent</p>
+    <p *ngSwitchCase="'B'">Good</p>
+    <p *ngSwitchCase="'C'">Weak</p>
+    <p *ngSwitchDefault="">Unkown</p>
 </div>

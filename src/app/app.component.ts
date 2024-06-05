@@ -34,4 +34,12 @@ export class AppComponent {
 
   // ng Style
   selectorColor: string = "blue";
+
+  // Structure Directives ngIf ngFor ngSwitch
+  isLogedIn: boolean= true;
+  username: string = "Nacer";
+
+  names: string[] = ["Ali", "Omar","Jhon"];
+
+  grade: string = 'M';
 }

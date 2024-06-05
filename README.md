@@ -33,3 +33,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  `[ngClass] = ""`
  `[ngStyle] = ""` : Adding additionall calsses without effecting the actual calss
 
+5 - Structure Directives:
+ngIf:
+ngFor:
+ngSwitch:
